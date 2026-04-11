@@ -1,4 +1,4 @@
-# 🚀 GitHub Issues Enhancer Extension
+# DevMeld Github Extension
 
 > Supercharge your GitHub experience with **developer insights, issue tracking, and comment intelligence** — all in one floating UI.
 
@@ -53,7 +53,7 @@
 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/github-issues-enhancer.git
+git clone https://github.com/RishiBose961/DevMeld-Extension
 ```
 
 2. Open Chrome Extensions
@@ -117,17 +117,10 @@ Contributions are welcome!
 fork → clone → commit → pull request
 ```
 
----
-
-## 📄 License
-
-MIT License © 2026
-
----
 
 ## 💡 Author
 
-Built with ❤️ by **Your Name**
+Built with ❤️ by **Rishi Bose**
 
 ---
 
