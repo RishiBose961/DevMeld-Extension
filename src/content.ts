@@ -137,15 +137,15 @@ async function showPopup(issues: any[]) {
           </a><br/>
 
           <small>
-            👤 <strong>${issue.author}</strong>
+            👤 <strong>Github id : ${issue.author}</strong>
 
             ${
               dev
                 ? `
                 <div style="margin-top:4px;">
                   <span style="color:#3fb950;">📧 ${dev.emailAddress}</span> |
-                  <span style="color:#f85149;">🔗 ${dev.githubProfile}</span>
-                  <br/>
+                  <span style="color:#f85149;">🔗 ${dev.githubProfile}</span> |
+                  <span style="color:#3fb950;">👤 ${dev.username}</span>
                 </div>
               `
                 : `<div style="color:#8b949e;">⚠️ Not Registered on DevMeld</div>`
@@ -247,7 +247,7 @@ async function showCommentsPopup(comments: any[]) {
         return `
         <li style="margin-bottom:14px; border-bottom:1px solid #30363d; padding-bottom:10px;">
           
-          <strong>👤 ${c.user}</strong>
+          <strong>Github id : ${c.user}</strong>
 
           ${
             dev
@@ -259,13 +259,15 @@ async function showCommentsPopup(comments: any[]) {
                 📧 ${dev.emailAddress}
                 <br/>
                 🔗 ${dev.githubProfile}
+                <br/>
+                👤 ${dev.username}
               </div>
             `
               : `<div style="color:#8b949e;">⚠️ Not Registered on DevMeld</div>`
           }
 
           <br/>
-          <small>${c.text.substring(0, 120)}...</small><br/>
+          <small>${c.text}</small><br/>
           <a href="${c.url}" target="_blank" style="color:#58a6ff;">View</a>
         </li>
         `;
